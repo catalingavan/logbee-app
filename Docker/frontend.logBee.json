@@ -1,0 +1,34 @@
+{
+  "LogBeeFrontendDomain": "logBee.dev",
+  "StaticResourcesVersion": "6.0.1",
+  "LogBeeBackendUrl": "http://logBee.backend.dev",
+  "LogBeeFrontendUrl": "http://logBee.frontend.dev",
+  "LogBeeFrontend.BasicAuth.Password": "_LogBeeFrontend_authorization_password_",
+  "LogBeeBackend.BasicAuth.Password": "_LogBeeBackend_authorization_password_",
+  "LogBee.License": "",
+  "Database": {
+    "Provider": "MongoDb",
+    "MongoDb": {
+      "ConnectionString": "mongodb://logBee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+      "DatabaseName": "LogBeeFrontend"
+    }
+  },
+  "Smtp": {
+    "Host": "smtp.sendgrid.net",
+    "Port": 587,
+    "UserName": "",
+    "Password": "",
+    "EnableSsl": false
+  },
+  "UserInterface": {
+    "NumberOfApplicationsToPreloadOnTheDashboardPage": 6
+  },
+  "Authorization": {
+    "HS256Secret": "00000000-0000-0000-0000-000000000000-00000000-0000-0000-0000-000000000000",
+    "AzureActiveDirectory": {
+      "ClientId": "<AD Application (client) ID>",
+      "ClientSecret": "<secret>",
+      "Authority": "https://login.microsoftonline.com/<AD Directory (tenant) ID>/v2.0/"
+    }
+  }
+}
