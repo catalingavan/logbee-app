@@ -1,14 +1,14 @@
 version: "3.7"
 networks:
   default:
-    name: logBee-net
+    name: logbee-net
     driver_opts:
       com.docker.network.driver.mtu: 1380
 
 services:
   backend:
-    image: catalingavan/logBee.backend:6.0.1
-    container_name: logBee.backend.dev
+    image: catalingavan/logbee.backend:0.0.0
+    container_name: logbee.backend.dev
     restart: unless-stopped
     volumes:
       - ./backend.appsettings.json:/app/appsettings.json
@@ -19,8 +19,8 @@ services:
       - "mongodb"
 
   frontend:
-    image: catalingavan/logBee.frontend:6.0.1
-    container_name: logBee.frontend.dev
+    image: catalingavan/logbee.frontend:0.0.0
+    container_name: logbee.frontend.dev
     restart: unless-stopped
     volumes:
       - ./frontend.appsettings.json:/app/appsettings.json
@@ -32,7 +32,7 @@ services:
 
   mongodb:
     image: mongo:6.0.4
-    container_name: logBee.mongodb.dev
+    container_name: logbee.mongodb.dev
     restart: unless-stopped
     volumes:
       - mongo-data:/data/db
