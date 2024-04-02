@@ -66,6 +66,5 @@ POST http://localhost:44088/request-logs
 ## User interface
 
 <table><tr><td>
-    <img alt="User interface" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/8944691a-3f6e-4946-9a73-85390a867b87" />
+    <img alt="User interface" src="https://github.com/logBee-net/logBee-app/assets/39127098/44c8686b-bc24-4c4e-9fd8-155da9826a08" />
 </td></tr></table>
-
