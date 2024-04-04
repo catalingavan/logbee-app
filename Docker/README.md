@@ -1,6 +1,6 @@
 # logBee app on Docker
 
-logBee app can run as a Docker container, thanks to [Marcio](https://github.com/zimbres) valuable contribution.
+logBee can run as a Docker container, thanks to [Marcio](https://github.com/zimbres) valuable contribution.
 
 In this folder you will find all the necessary files.
 
