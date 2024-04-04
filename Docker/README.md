@@ -32,11 +32,6 @@ app.UseKissLogMiddleware(options => {
 });
 ```
 
-<img width="642" alt="Login" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/30b3b8bd-d7d4-4e79-9e5d-771df2f41174">
+![logBee login](https://github.com/logBee-net/logBee-app/assets/39127098/4bf1fca5-8250-4e96-a0fe-c6fe55fc439d)
 
-<img width="746" alt="Dashboard" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/a50d654e-5a0b-4094-b328-63dad69f2e53">
-
-<img width="746" alt="Request" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/21517eae-a70b-4ccc-8277-f1314a2850ac">
-
-<img width="746" alt="Windows terminal" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/50c1adbf-7a1b-4cec-a22a-ceefdf9a91b7">
-
+![Running docker-compose](https://github.com/logBee-net/logBee-app/assets/39127098/895ae32f-f546-4004-a66e-ed64027250b4)
