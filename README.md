@@ -29,7 +29,7 @@ Installation and configuration guide can be found here: <br/>
 
 ```none
 docker pull catalingavan/logbee.frontend:0.0.1
-docker pull catalingavan/logbee.backend:0.0.1
+docker pull catalingavan/logbee.backend:0.0.3
 ```
 
 ## Integrations
