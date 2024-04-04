@@ -32,6 +32,6 @@ app.UseKissLogMiddleware(options => {
 });
 ```
 
-![logBee login](https://github.com/logBee-net/logBee-app/assets/39127098/4bf1fca5-8250-4e96-a0fe-c6fe55fc439d)
+![logBee login](https://github.com/logBee-net/logBee-app/assets/39127098/43d80638-bf38-4e2f-9b7c-8aef0c1ce4ed)
 
 ![Running docker-compose](https://github.com/logBee-net/logBee-app/assets/39127098/895ae32f-f546-4004-a66e-ed64027250b4)
