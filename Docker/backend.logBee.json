@@ -1,12 +1,12 @@
 {
-  "LogBeeBackendUrl": "http://logBee.backend.dev",
-  "LogBeeFrontendUrl": "http://logBee.frontend.dev",
+  "LogBeeBackendUrl": "http://logbee.backend.dev",
+  "LogBeeFrontendUrl": "http://logbee.frontend.dev",
   "LogBeeFrontend.BasicAuth.Password": "_LogBeeFrontend_authorization_password_",
   "LogBeeBackend.BasicAuth.Password": "_LogBeeBackend_authorization_password_",
   "Database": {
     "Provider": "MongoDb",
     "MongoDb": {
-      "ConnectionString": "mongodb://logBee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+      "ConnectionString": "mongodb://logbee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
       "DatabaseName": "LogBeeBackend"
     }
   },
@@ -18,7 +18,7 @@
     "Database": {
       "Provider": "MongoDb",
       "MongoDb": {
-        "ConnectionString": "mongodb://logBee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+        "ConnectionString": "mongodb://logbee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
         "DatabaseName": "LogBeeFrontend"
       }
     }

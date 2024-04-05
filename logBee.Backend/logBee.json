@@ -1,6 +1,6 @@
 {
-  "LogBeeBackendUrl": "http://logBee-backend.your_domain.com",
-  "LogBeeFrontendUrl": "http://logBee-frontend.your_domain.com",
+  "LogBeeBackendUrl": "http://logbee-backend.your_domain.com",
+  "LogBeeFrontendUrl": "http://logbee-frontend.your_domain.com",
   "LogBeeFrontend.BasicAuth.Password": "_LogBeeFrontend_authorization_password_",
   "LogBeeBackend.BasicAuth.Password": "_LogBeeBackend_authorization_password_",
   "Database": {
