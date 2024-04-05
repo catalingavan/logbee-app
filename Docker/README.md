@@ -1,6 +1,6 @@
 # logBee app on Docker
 
-logBee app can run as a Docker container, thanks to [Marcio](https://github.com/zimbres) valuable contribution.
+logBee can run as a Docker container, thanks to [Marcio](https://github.com/zimbres) valuable contribution.
 
 In this folder you will find all the necessary files.
 
@@ -32,11 +32,6 @@ app.UseKissLogMiddleware(options => {
 });
 ```
 
-<img width="642" alt="Login" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/30b3b8bd-d7d4-4e79-9e5d-771df2f41174">
+![logBee login](https://github.com/logBee-net/logBee-app/assets/39127098/43d80638-bf38-4e2f-9b7c-8aef0c1ce4ed)
 
-<img width="746" alt="Dashboard" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/a50d654e-5a0b-4094-b328-63dad69f2e53">
-
-<img width="746" alt="Request" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/21517eae-a70b-4ccc-8277-f1314a2850ac">
-
-<img width="746" alt="Windows terminal" src="https://github.com/KissLog-net/KissLog-server/assets/39127098/50c1adbf-7a1b-4cec-a22a-ceefdf9a91b7">
-
+![Running docker-compose](https://github.com/logBee-net/logBee-app/assets/39127098/895ae32f-f546-4004-a66e-ed64027250b4)
