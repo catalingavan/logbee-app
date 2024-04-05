@@ -36,9 +36,11 @@ docker pull catalingavan/logbee.backend:0.0.3
 
 ### .NET
 
-.NET applications can use the [KissLog.Sdk](https://github.com/KissLog-net/KissLog.Sdk) library which automatically sends all the logs and metrics to logBee
+.NET applications can use the [KissLog.Sdk](https://github.com/KissLog-net/KissLog.Sdk) library which automatically sends all the logs and metrics to logBee.
 
 ### REST
+
+You can create logs by consuming the REST endpoint provided by logBee.
 
 ```
 POST http://localhost:44088/request-logs
