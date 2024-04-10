@@ -1,4 +1,4 @@
-# ![logBee](https://github.com/logBee-net/logBee-app/assets/39127098/d1436229-983d-41e7-bcff-7288601bf2d0)
+# [![logBee](https://github.com/logBee-net/logBee-app/assets/39127098/d1436229-983d-41e7-bcff-7288601bf2d0)](https://logbee.net)
 
 logBee is a logging, exceptions tracking and Application Performance Monitoring server. <br/>
 It provides a powerful and easy to use user-interface, allowing for viewing and analyzing the data in real time.
