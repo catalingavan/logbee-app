@@ -19,7 +19,7 @@ services:
       - "mongodb"
 
   frontend:
-    image: catalingavan/logbee.frontend:1.0.1
+    image: catalingavan/logbee.frontend:1.0.2
     container_name: logbee.frontend.dev
     restart: unless-stopped
     volumes:
