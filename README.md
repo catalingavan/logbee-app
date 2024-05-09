@@ -1,11 +1,9 @@
 # [![logBee](https://github.com/logBee-net/logBee-app/assets/39127098/d1436229-983d-41e7-bcff-7288601bf2d0)](https://logbee.net)
 
-logBee is a logging, exceptions tracking and Application Performance Monitoring server. <br/>
-It provides a powerful and easy to use user-interface, allowing for viewing and analyzing the data in real time.
+logBee is a logging aggregator, exceptions tracking and Application Performance Monitoring server. <br/>
+It provides an intuitive user-interface, allowing for viewing and analyzing the data in real time.
 
-logBee ingests data via REST interfaces, making it compatible with any programming language and platform.
-
-[logBee.net](https://logBee.net), the public instance of logBee, currently processes about 200 logs per second and a total of 50 million logs per month.
+The application can be used [online](https://logbee.net), can be installed locally or it can run as a Docker container.
 
 ## Technology
 
@@ -36,7 +34,8 @@ docker pull catalingavan/logbee.backend:0.0.3
 
 ### .NET
 
-.NET applications can use the [KissLog.Sdk](https://github.com/KissLog-net/KissLog.Sdk) library which automatically sends all the logs and metrics to logBee.
+- [Serilog.Sinks.LogBee](https://github.com/logBee-net/serilog-sinks-logbee)
+- [KissLog.Sdk](https://github.com/KissLog-net/KissLog.Sdk)
 
 ### REST
 
