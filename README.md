@@ -1,7 +1,7 @@
 # [![logBee](https://github.com/logBee-net/logBee-app/assets/39127098/d1436229-983d-41e7-bcff-7288601bf2d0)](https://logbee.net)
 
 logBee is a logging aggregator, exceptions tracking and Application Performance Monitoring server. <br/>
-It provides an intuitive user-interface, allowing for viewing and analyzing the data in real time.
+It provides an intuitive user-interface, allowing developers to access the information and other useful metrics in real-time.
 
 The application can be used [online](https://logbee.net), can be installed locally or it can run as a Docker container.
 
