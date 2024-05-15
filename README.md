@@ -34,8 +34,8 @@ docker pull catalingavan/logbee.backend:1.0.1
 
 ### .NET
 
-- [Serilog.Sinks.LogBee](https://github.com/logBee-net/serilog-sinks-logbee)
-- [KissLog.Sdk](https://github.com/KissLog-net/KissLog.Sdk)
+- [Serilog.Sinks.LogBee](https://github.com/catalingavan/serilog-sinks-logbee)
+- [KissLog.Sdk](https://github.com/catalingavan/KissLog.Sdk)
 
 ### REST
 
