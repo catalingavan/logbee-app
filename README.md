@@ -7,7 +7,7 @@ The application can be used [online](https://logbee.net), can be installed local
 
 ## Technology
 
-- Built on .NET6
+- Built on .NET8
 - Working on Windows, Linux and [Docker](Docker/README.md)
 - Uses MongoDB 6.0 or Azure Cosmos DB (when hosted on Microsoft Azure)
 
