@@ -1,6 +1,6 @@
 {
   "LogBeeFrontendDomain": "logbee.dev",
-  "StaticResourcesVersion": "1.1.5",
+  "StaticResourcesVersion": "1.1.6",
   "LogBeeBackendUrl": "http://logbee.backend.dev",
   "LogBeeFrontendUrl": "http://logbee.frontend.dev",
   "LogBeeFrontend.BasicAuth.Password": "_LogBeeFrontend_authorization_password_",
