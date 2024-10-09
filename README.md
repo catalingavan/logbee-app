@@ -8,7 +8,7 @@ The application can be used [online](https://logbee.net) or it can be installed 
 ## Technology
 
 - Built on .NET8
-- Can be hosted on Windows, Linux or run as a [Docker container](Docker/README.md)
+- It can be hosted on Windows or Linux, or run as a [Docker container](Docker/README.md)
 - Configurable storage using MongoDB 6.0 or Azure Cosmos DB (more storage options are under development)
 
 ## Artifacts
@@ -41,6 +41,8 @@ Examples of integration applications can be found on the [logbee-integrations-ex
 - REST (using Logbee APIs)
 
 ## User interface
+
+Here is a snapshot of the Logbee dashboard, showing how logs are displayed in real-time:
 
 <table><tr><td>
     <img alt="User interface" src="https://github.com/logBee-net/logBee-app/assets/39127098/44c8686b-bc24-4c4e-9fd8-155da9826a08" />
