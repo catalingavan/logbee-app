@@ -3,7 +3,7 @@
 Logbee is a logging aggregator, exceptions tracking and Application Performance Monitoring server. <br/>
 It provides an intuitive user-interface, allowing developers to access the information and other useful metrics in real-time.
 
-The application can be used [online](https://logbee.net) or it can be installed locally.
+The application can be used [online](https://logbee.net) or it can be hosted on-premises.
 
 ## Technology
 
