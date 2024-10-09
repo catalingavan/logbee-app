@@ -14,16 +14,16 @@ The application can be used [online](https://logbee.net) or it can be hosted on-
 ## Artifacts
 
 Logbee artifacts can be downloaded from here: <br/>
-<https://github.com/logBee-net/logBee-app/releases>
+<https://github.com/logbee-net/logbee-app/releases>
 
 Installation and configuration guide can be found here: <br/>
 [https://logbee.net/Docs/on-premises.index.html](https://logbee.net/Docs/on-premises.index.html)
 
 ### Latest versions
 
-[logBee.Frontend-v1.1.6](https://github.com/logbee-net/logBee-app/releases/tag/logBee.Frontend-v1.1.6)
+[logbee.Frontend-v1.1.6](https://github.com/logbee-net/logbee-app/releases/tag/logbee.Frontend-v1.1.6)
 
-[logBee.Backend-v1.1.0](https://github.com/logbee-net/logBee-app/releases/tag/logBee.Backend-v1.1.0)
+[logbee.Backend-v1.1.0](https://github.com/logbee-net/logbee-app/releases/tag/logbee.Backend-v1.1.0)
 
 ```none
 docker pull catalingavan/logbee.frontend:1.1.6
