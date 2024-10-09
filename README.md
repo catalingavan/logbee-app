@@ -8,7 +8,7 @@ The application can be used [online](https://logbee.net) or it can be hosted on-
 ## Technology
 
 - Built on .NET8
-- It can be hosted on Windows or Linux, or run as a [Docker container](Docker/README.md)
+- Can be hosted on Windows or Linux, or run as a [Docker container](Docker/README.md)
 - Configurable storage using MongoDB 6.0 or Azure Cosmos DB (more storage options are under development)
 
 ## Artifacts
