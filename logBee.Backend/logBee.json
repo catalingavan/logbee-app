@@ -236,17 +236,47 @@
       }
     ]
   },
+  "OpenTelemetry": {
+    "Trace": {
+      "MaximumNumberOfSpansPerRequest": 100,
+      "CreateTraceRateLimit": {
+        "IsEnabled": true,
+        "Limit": {
+          "RequestLimit": 5,
+          "IntervalInSeconds": 1
+        }
+      }
+    },
+    "Logs": {
+      "MaximumNumberOfSpansPerRequest": 100,
+      "CreateLogsRateLimit": {
+        "IsEnabled": true,
+        "Limit": {
+          "RequestLimit": 5,
+          "IntervalInSeconds": 1
+        }
+      }
+    }
+  },
   "UserAgentParserProvider": null,
   "ApplicationSettings": {
     "DeleteApplicationDataByExpiryDate": {
+      "MaximumDurationInMilliseconds": 1000,
       "TriggerIntervalInMinutes": 180
     },
     "ProcessQueues": {
+      "MaximumDurationInMilliseconds": 1000,
       "TriggerIntervalInSeconds": 10,
       "Take": 50
     },
     "ProcessAlerts": {
+      "MaximumDurationInMilliseconds": 1000,
       "TriggerIntervalInSeconds": 10
+    },
+    "ProcessAsyncRequestLogs": {
+      "MaximumDurationInMilliseconds": 5000,
+      "TriggerIntervalInSeconds": 5,
+      "Take": 50
     }
   }
 }
