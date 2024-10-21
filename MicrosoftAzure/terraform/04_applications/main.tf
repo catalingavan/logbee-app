@@ -71,13 +71,13 @@ resource "azurerm_linux_web_app" "logbee_frontend_3" {
   }
 
   app_settings = {
-    LOGBEE_CONFIGURATION_FILE_PATH = "/configuration/logbee.json"
+    LOGBEE_CONFIGURATION_FILE_PATH = "/app/configuration/logbee.json"
   }
 
   storage_account {
-    access_key   = data.terraform_remote_state.storage_account.outputs.primary_access_key
-    account_name = data.terraform_remote_state.storage_account.outputs.name
-    share_name   = data.terraform_remote_state.storage_account.configuration_share_name
+    access_key   = data.terraform_remote_state.storage_account.outputs.storage_account_primary_access_key
+    account_name = data.terraform_remote_state.storage_account.outputs.storage_account_name
+    share_name   = data.terraform_remote_state.storage_account.outputs.logbee_frontend_share_name
     type         = "AzureFiles"
 
     # this name must match the value specified in docker-compose.yaml

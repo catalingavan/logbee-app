@@ -28,14 +28,16 @@ resource "azurerm_storage_account" "logbee_storage_account" {
   account_replication_type = "LRS"
 }
 
-resource "azurerm_storage_container" "logbee_storage_container" {
-  name                  = "logbee-frontend-container"
-  storage_account_name  = azurerm_storage_account.logbee_storage_account.name
-  container_access_type = "private"
+# FileShare where we will upload the "logbee.json" configuration file consumed by the logbee-frontend AppService
+resource "azurerm_storage_share" "logbee_frontend_share" {
+  name                 = "logbee-frontend-share"
+  storage_account_name = azurerm_storage_account.logbee_storage_account.name
+  quota                = 1
 }
 
-resource "azurerm_storage_share" "logbee_configuration_share" {
-  name                 = "logbee-configuration"
+# FileShare where we will upload the "logbee.json" configuration file consumed by the logbee-backend AppService
+resource "azurerm_storage_share" "logbee_backend_share" {
+  name                 = "logbee-backend-share"
   storage_account_name = azurerm_storage_account.logbee_storage_account.name
   quota                = 1
 }
