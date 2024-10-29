@@ -21,12 +21,12 @@ Installation and configuration guide can be found here: <br/>
 
 ### Latest versions
 
-[logbee.Frontend-v1.2.2](https://github.com/catalingavan/logbee-app/releases/tag/logbee.Frontend-v1.2.2)
+[logbee.Frontend-v1.3.0](https://github.com/catalingavan/logbee-app/releases/tag/logbee.Frontend-v1.3.0)
 
 [logbee.Backend-v1.3.0](https://github.com/catalingavan/logbee-app/releases/tag/logbee.Backend-v1.3.0)
 
 ```none
-docker pull catalingavan/logbee.frontend:1.2.2
+docker pull catalingavan/logbee.frontend:1.3.0
 docker pull catalingavan/logbee.backend:1.3.0
 ```
 
