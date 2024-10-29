@@ -7,7 +7,7 @@ networks:
 
 services:
   backend:
-    image: catalingavan/logbee.backend:1.2.1
+    image: catalingavan/logbee.backend:1.3.0
     container_name: logbee.backend.dev
     restart: unless-stopped
     volumes:

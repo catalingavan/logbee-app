@@ -263,6 +263,10 @@
       "MaximumDurationInMilliseconds": 5000,
       "TriggerIntervalInSeconds": 5,
       "Take": 50
+    },
+    "DeleteLocalLogFiles": {
+      "CreatedMoreThanNDaysAgo": 3,
+      "TriggerIntervalInHours": 6
     }
   }
 }
