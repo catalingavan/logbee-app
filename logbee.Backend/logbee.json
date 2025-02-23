@@ -1,40 +1,29 @@
 {
-  "LogBeeBackendUrl": "http://logbee-backend.your_domain.com",
-  "LogBeeFrontendUrl": "http://logbee-frontend.your_domain.com",
-  "LogBeeFrontend.BasicAuth.Password": "_LogBeeFrontend_authorization_password_",
-  "LogBeeBackend.BasicAuth.Password": "_LogBeeBackend_authorization_password_",
+  "LogbeeFrontendConfigurationFilePath": "logbee.frontend/Configuration/logbee.json",
+  "LogbeeBackendUrl": "http://logbee-backend.your_domain.com",
+  "LogbeeBackend.BasicAuth.Password": "_LogbeeBackend_authorization_password_",
   "Database": {
     "Provider": "MongoDb",
     "MongoDb": {
       "ConnectionString": "mongodb://localhost:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
-      "DatabaseName": "LogBeeBackend"
+      "DatabaseName": "LogbeeBackend"
     },
     "AzureCosmosDb": {
       "ApplicationRegion": "West Europe",
       "ConnectionString": "https://cosmos-db-name.documents.azure.com:443/;AccountKey=_accountKeyValue_;",
-      "DatabaseName": "LogBeeBackend"
+      "DatabaseName": "LogbeeBackend",
+      "AzureStorageAccountConnectionString": "DefaultEndpointsProtocol=https;AccountName=storagename;AccountKey=_accountKeyValue_;EndpointSuffix=core.windows.net"
     }
   },
-  "Files": {
+  "FileStorage": {
     "Provider": "MongoDb",
     "MaximumFileSizeInBytes": 2097152,
+    "MongoDb": {
+      "ConnectionString": "mongodb://localhost:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+      "DatabaseName": "LogbeeBackend"
+    },
     "Azure": {
       "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=storagename;AccountKey=_accountKeyValue_;EndpointSuffix=core.windows.net"
-    }
-  },
-  "LogBeeFrontend": {
-    "Database": {
-      "Provider": "MongoDb",
-      "MySql": {
-        "ConnectionString": "server=localhost;port=3306;database=LogBeeFrontend;uid=<replace_user>;password=<replace_password>;Charset=utf8;"
-      },
-      "SqlServer": {
-        "ConnectionString": "Server=localhost;Database=LogBeeFrontend;User ID=<replace_user>;Password=<replace_password>;TrustServerCertificate=True;"
-      },
-      "MongoDb": {
-        "ConnectionString": "mongodb://localhost:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
-        "DatabaseName": "LogBeeFrontend"
-      }
     }
   },
   "CreateRequestLog": {
@@ -258,7 +247,6 @@
       }
     }
   },
-  "UserAgentParserProvider": null,
   "ApplicationSettings": {
     "DeleteApplicationDataByExpiryDate": {
       "MaximumDurationInMilliseconds": 1000,
