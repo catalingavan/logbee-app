@@ -1,6 +1,6 @@
 {
-  "LogbeeFrontendConfigurationFilePath": "logbee.frontend/Configuration/logbee.json",
-  "LogbeeBackendUrl": "http://logbee-backend.your_domain.com",
+  "LogbeeFrontendConfigurationFilePath": "Configuration/frontend/logbee.json",
+  "LogbeeBackendUrl": "http://logbee.backend.dev",
   "LogbeeBackend.BasicAuth.Password": "_LogbeeBackend_authorization_password_",
   "Database": {
     "Provider": "MongoDb",
@@ -13,11 +13,8 @@
     "Provider": "MongoDb",
     "MaximumFileSizeInBytes": 2097152,
     "MongoDb": {
-      "ConnectionString": "mongodb://localhost:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+      "ConnectionString": "mongodb://logbee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
       "DatabaseName": "LogbeeBackend"
-    },
-    "Azure": {
-      "ConnectionString": "DefaultEndpointsProtocol=https;AccountName=storagename;AccountKey=_accountKeyValue_;EndpointSuffix=core.windows.net"
     }
   },
   "CreateRequestLog": {
@@ -263,20 +260,6 @@
     "DeleteLocalLogFiles": {
       "CreatedMoreThanNDaysAgo": 3,
       "TriggerIntervalInHours": 6
-    }
-  },
-  "LogBeeBackendUrl": "http://logbee.backend.dev",
-  "LogBeeFrontendUrl": "http://logbee.frontend.dev",
-  "Files": {
-    "Provider": "MongoDb"
-  },
-  "LogBeeFrontend": {
-    "Database": {
-      "Provider": "MongoDb",
-      "MongoDb": {
-        "DatabaseName": "LogBeeFrontend",
-        "ConnectionString": "mongodb://logbee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000"
-      }
     }
   }
 }
