@@ -1,19 +1,19 @@
 {
-  "LogbeeFrontendConfigurationFilePath": "Configuration/frontend/logbee.json",
-  "LogbeeBackendUrl": "http://logbee.backend.dev",
+  "LogbeeFrontendConfigurationFilePath": "Configuration/frontend.logbee.json",
+  "LogbeeBackendUrl": "http://logbee.backend",
   "LogbeeBackend.BasicAuth.Password": "_LogbeeBackend_authorization_password_",
   "Database": {
     "Provider": "MongoDb",
     "MongoDb": {
-      "ConnectionString": "mongodb://logbee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
-      "DatabaseName": "LogBeeBackend"
+      "ConnectionString": "mongodb://logbee.mongodb:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+      "DatabaseName": "LogbeeBackend"
     }
   },
   "FileStorage": {
     "Provider": "MongoDb",
     "MaximumFileSizeInBytes": 2097152,
     "MongoDb": {
-      "ConnectionString": "mongodb://logbee.mongodb.dev:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
+      "ConnectionString": "mongodb://logbee.mongodb:27017?socketTimeoutMS=5000&connectTimeoutMS=5000",
       "DatabaseName": "LogbeeBackend"
     }
   },

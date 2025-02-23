@@ -1,42 +1,56 @@
 version: "3.7"
+
 networks:
   default:
     name: logbee-net
+    driver: bridge
     driver_opts:
       com.docker.network.driver.mtu: 1380
 
 services:
   backend:
     image: catalingavan/logbee.backend:2.0.0-draft2
-    container_name: logbee.backend.dev
+    container_name: logbee.backend
     restart: unless-stopped
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - LOGBEE_BACKEND_CONFIGURATION_FILE_PATH=Configuration/backend.logbee.json
     volumes:
-      - ./backend.appsettings.json:/app/appsettings.json
-      - ./backend.logbee.json:/app/Configuration/logBee.json
+      - ./backend.logbee.json:/app/Configuration/backend.logbee.json
+      - ./frontend.logbee.json:/app/Configuration/frontend.logbee.json
     ports:
       - "44088:80"
-    links:
-      - "mongodb"
+    depends_on:
+      - mongodb
+    networks:
+      - default
 
   frontend:
     image: catalingavan/logbee.frontend:1.3.3
-    container_name: logbee.frontend.dev
+    container_name: logbee.frontend
     restart: unless-stopped
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - LOGBEE_FRONTEND_CONFIGURATION_FILE_PATH=Configuration/frontend.logbee.json
     volumes:
-      - ./frontend.appsettings.json:/app/appsettings.json
-      - ./frontend.logbee.json:/app/Configuration/logBee.json
+      - ./frontend.logbee.json:/app/Configuration/frontend.logbee.json
+      - ./backend.logbee.json:/app/Configuration/backend.logbee.json
     ports:
       - "44080:80"
-    links:
-      - "backend"
+    depends_on:
+      - backend
+    networks:
+      - default
 
   mongodb:
-    image: mongo:6.0.4
-    container_name: logbee.mongodb.dev
+    image: mongo:8.0.4
+    container_name: logbee.mongodb
     restart: unless-stopped
     volumes:
       - mongo-data:/data/db
       - mongo-config:/data/configdb
+    networks:
+      - default
 
 volumes:
   mongo-data:
