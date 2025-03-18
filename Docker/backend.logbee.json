@@ -35,8 +35,8 @@
         "(?si).png$",
         "(?si).pnz$",
         "(?si).ico$",
-        "(?si).txt$",
-        "(?si).xml$",
+        "(?si)^(?!.*robots\\.txt$).*\\.txt$",
+        "(?si)^(?!.*sitemap\\.xml$).*\\.xml$",
         "(?si).php$",
         "(?si).ttf"
       ],
@@ -240,16 +240,16 @@
   },
   "ApplicationSettings": {
     "DeleteApplicationDataByExpiryDate": {
-      "MaximumDurationInMilliseconds": 1000,
+      "MaximumDurationInMilliseconds": 5000,
       "TriggerIntervalInMinutes": 180
     },
     "ProcessQueues": {
-      "MaximumDurationInMilliseconds": 1000,
+      "MaximumDurationInMilliseconds": 5000,
       "TriggerIntervalInSeconds": 10,
       "Take": 50
     },
     "ProcessAlerts": {
-      "MaximumDurationInMilliseconds": 1000,
+      "MaximumDurationInMilliseconds": 5000,
       "TriggerIntervalInSeconds": 10
     },
     "ProcessAsyncRequestLogs": {
