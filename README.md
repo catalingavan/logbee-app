@@ -3,13 +3,13 @@
 Logbee is a logging aggregator, exceptions tracking and Application Performance Monitoring server. <br/>
 It provides an intuitive user-interface, allowing developers to access the information and other useful metrics in real-time.
 
-The application can be used [online](https://logbee.net) or it can be hosted on-premises.
+The application can be used [online](https://logbee.net) or it can be hosted [on-premises](https://logbee.net/Docs/on-premises.index.html).
 
 ## Technology
 
 - Built on .NET8
 - Can be hosted on Windows or Linux, or run as a [Docker container](Docker/README.md)
-- Configurable storage using MongoDB 6.0 or Azure Cosmos DB (more storage options are under development)
+- Configurable storage using MongoDB 8.0 or Azure Cosmos DB (more storage options are under development)
 
 ## Artifacts
 

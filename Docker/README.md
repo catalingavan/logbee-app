@@ -6,10 +6,10 @@ In this folder you will find all the necessary files.
 
 ```none
 # starts the Logbee app and all the necesarry prerequisites
-C:\logbee-net\logbee-app\Docker> docker-compose up
+C:\logbee-net\logbee-app\Docker> docker compose up -d
 
 # stops the Logbee app docker containers
-C:\logbee-net\logbee-app\Docker> docker-compose down
+C:\logbee-net\logbee-app\Docker> docker compose down
 
 # Authentication token,
 # a JWT signed with the value from frontend.logbee.json@$.Authorization.HS256Secret
