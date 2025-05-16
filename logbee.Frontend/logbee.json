@@ -1,7 +1,7 @@
 {
   "LogbeeBackendConfigurationFilePath": "logbee.backend/Configuration/logbee.json",
   "LogbeeFrontendDomain": "your_domain.com",
-  "StaticResourcesVersion": "2.0.3",
+  "StaticResourcesVersion": "2.1.0",
   "LogbeeFrontendUrl": "http://logbee-frontend.your_domain.com",
   "LogbeeFrontend.BasicAuth.Password": "_LogbeeFrontend_authorization_password_",
   "Logbee.License": "",
@@ -58,5 +58,6 @@
       "CreatedMoreThanNDaysAgo": 3,
       "TriggerIntervalInHours": 6
     }
-  }
+  },
+  "_version": "2.1.0"
 }
