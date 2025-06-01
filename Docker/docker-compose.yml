@@ -24,7 +24,7 @@ services:
       - default
 
   frontend:
-    image: catalingavan/logbee.frontend:2.1.2
+    image: catalingavan/logbee.frontend:2.1.3
     container_name: logbee.frontend
     restart: unless-stopped
     environment:
