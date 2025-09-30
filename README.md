@@ -1,4 +1,4 @@
-# [![Logbee](https://github.com/catalingavan/logbee-app/assets/39127098/d1436229-983d-41e7-bcff-7288601bf2d0)](https://logbee.net)
+# [![Logbee](https://github.com/user-attachments/assets/10d26fb9-d0e8-452a-9bef-90579b246d94)](https://logbee.net)
 
 Logbee is a logging aggregator, exceptions tracking and Application Performance Monitoring server. <br/>
 It provides an intuitive user-interface, allowing developers to access the information and other useful metrics in real-time.
