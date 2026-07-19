@@ -59,7 +59,7 @@
     },
     "Obfuscate": {
       "IsEnabled": true,
-      "ObfuscateInputStream": false,
+      "ObfuscateInputStream": true,
       "Placeholder": "<obfuscated>",
       "Patterns": [
         "(?si)pass",
@@ -262,5 +262,5 @@
       "TriggerIntervalInHours": 6
     }
   },
-  "_version": "2.2.0"
+  "_version": "2.2.1"
 }
